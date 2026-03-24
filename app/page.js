@@ -42,8 +42,8 @@ export default function Home() {
 
         <div className={styles.contactCard}>
           <p className={styles.contactTitle}>Sales Contact</p>
-          <a className={styles.contactNumber} href="tel:+61489996473">
-            (+61) 489 996 473
+          <a className={styles.contactNumber} href="tel:+61480806779">
+            (+61) 480 806 779
           </a>
         </div>
 
