@@ -13,8 +13,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Agrillano — Coming Soon",
-  description: "Agrillano is under construction. We'll be live soon!",
+  title: "Agrillano — Website Under Maintenance",
+  description:
+    "Agrillano is currently upgrading the website. Contact Sales Team for manual assistance.",
 };
 
 export default function RootLayout({ children }) {
