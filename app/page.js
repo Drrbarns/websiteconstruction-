@@ -4,26 +4,16 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.gradientLayer} />
-      <div className={styles.grainLayer} />
-
-      <div className={`${styles.floatImg} ${styles.itemOne}`} aria-hidden="true">
-        <Image src="/crop-potato.png" alt="Potato" width={110} height={110} />
-      </div>
-      <div className={`${styles.floatImg} ${styles.itemTwo}`} aria-hidden="true">
-        <Image src="/crop-apple.png" alt="Apple" width={100} height={100} />
-      </div>
-      <div className={`${styles.floatImg} ${styles.itemThree}`} aria-hidden="true">
-        <Image src="/crop-grapes.png" alt="Grapes" width={120} height={120} />
-      </div>
-      <div className={`${styles.floatImg} ${styles.itemFour}`} aria-hidden="true">
-        <Image src="/crop-corn.png" alt="Corn" width={130} height={130} />
-      </div>
-      <div className={`${styles.floatImg} ${styles.itemFive}`} aria-hidden="true">
-        <Image src="/crop-carrot.png" alt="Carrot" width={115} height={115} />
-      </div>
-      <div className={`${styles.floatImg} ${styles.itemSix}`} aria-hidden="true">
-        <Image src="/crop-orange.png" alt="Orange" width={105} height={105} />
+      <div className={styles.bgImage}>
+        <Image
+          src="/bg-crops.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className={styles.bgFill}
+          priority
+        />
+        <div className={styles.bgOverlay} />
       </div>
 
       <div className={styles.container}>
@@ -38,9 +28,7 @@ export default function Home() {
           />
         </div>
 
-        <div className={styles.badge}>
-          Website Under Maintenance
-        </div>
+        <div className={styles.badge}>Website Under Maintenance</div>
 
         <h1 className={styles.h1}>
           We are currently upgrading our website to serve you better.
@@ -55,7 +43,7 @@ export default function Home() {
         <div className={styles.contactCard}>
           <p className={styles.contactTitle}>Sales Contact</p>
           <a className={styles.contactNumber} href="tel:+61489996473">
-            (+61)489996473
+            (+61) 489 996 473
           </a>
         </div>
 
@@ -66,4 +54,3 @@ export default function Home() {
     </main>
   );
 }
-
